@@ -1,0 +1,19 @@
+.competenciesList {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.competency {
+	padding: 0.25rem 0.7rem;
+	color: var(--color-blue-500);
+	border: 0.0625rem solid var(--color-blue-500);
+	border-radius: 1rem;
+}
+
+.competency + .competency {
+	margin-left: 0.25rem;
+}

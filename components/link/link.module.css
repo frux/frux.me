@@ -1,0 +1,8 @@
+.link, .link:visited {
+	color: var(--color-blue-500);
+	text-decoration: none;
+}
+
+.link:hover {
+	color: var(--color-red-500);
+}

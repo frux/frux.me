@@ -1,0 +1,11 @@
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.locales {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

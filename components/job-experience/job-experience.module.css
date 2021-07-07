@@ -1,0 +1,49 @@
+.jobList {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.job {
+	margin-top: 1.75rem;
+}
+
+.companyTitle {
+	line-height: 1;
+}
+
+.companyDescription {
+	margin-left: 0.6rem;
+	font-size: 0.8rem;
+	font-weight: lighter;
+}
+
+.period {
+	font-size: 0.8rem;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.position {
+	margin-top: 0.25rem;
+	word-break: break-all;
+	font-weight: bold;
+}
+
+.positionName {
+	margin-right: 0.6rem;
+}
+
+.activities {
+	display: block;
+	margin-top: 1rem;
+}
+
+.acitivity {
+	margin-top: 0.25rem;
+}
+
+.acitivity:first-child {
+	margin-top: 0;
+}

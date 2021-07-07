@@ -1,0 +1,11 @@
+.section {
+	clear: both;
+}
+
+.section + .section {
+	margin-top: 1.75rem;
+}
+
+.title {
+	margin-bottom: 0.75rem;
+}
