@@ -5,7 +5,7 @@ import { ELocale, II18n } from '../types';
 export const jobExperience: Readonly<IJob[]> = [
 	{
 		company: COMPANY.yandex,
-		position: POSITION.frontendEngineer,
+		position: POSITION.frontendDeveloper,
 		start: new Date('2014-12-08:00:00Z'),
 		activities: [
 			{
@@ -77,9 +77,8 @@ export const jobExperience: Readonly<IJob[]> = [
 				[ELocale.ru]: 'Разрабатывал корпоративные сайты на базе CMS',
 			},
 		],
-	}
+	},
 ];
-
 
 export interface IJob {
 	company: ICompany,

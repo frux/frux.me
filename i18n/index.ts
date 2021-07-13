@@ -17,6 +17,6 @@ export const i18n = {
 		untilNow: {
 			[ELocale.en]: 'now',
 			[ELocale.ru]: 'настоящее время',
-		}
+		},
 	},
 } as const;

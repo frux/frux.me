@@ -1,8 +1,8 @@
 import { ELocale } from 'types';
 
 export const POSITION = {
-	frontendEngineer: {
-		[ELocale.en]: 'Frontend engineer',
+	frontendDeveloper: {
+		[ELocale.en]: 'Frontend developer',
 		[ELocale.ru]: 'Разработчик интерфейсов',
 	},
 	fullstackDeveloper: {
