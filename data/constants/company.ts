@@ -8,7 +8,7 @@ export const COMPANY = {
 		},
 		description: {
 			[ELocale.en]: 'Dance sport social network',
-			[ELocale.ru]: 'Социальная сеть сообщества спортивного бального танца'
+			[ELocale.ru]: 'Социальная сеть сообщества спортивного бального танца',
 		},
 		url: {
 			[ELocale.en]: 'https://web.archive.org/web/20190825061310/http://followway.com/',
@@ -36,11 +36,11 @@ export const COMPANY = {
 		},
 		description: {
 			[ELocale.en]: 'Russian corporation providing over 70 Internet-related products and services, including transportation, search and information services, e-commerce, navigation and online advertising',
-			[ELocale.ru]: 'Российская компания, предоставляющая более 70 продуктов и сервисов, включая транспорт, поисковые и информационные сервисы, e-commerce, навигацию и онлайн-рекламу'
+			[ELocale.ru]: 'Российская компания, предоставляющая более 70 продуктов и сервисов, включая транспорт, поисковые и информационные сервисы, e-commerce, навигацию и онлайн-рекламу',
 		},
 		url: {
 			[ELocale.en]: 'https://yandex.com',
-			[ELocale.ru]: 'https://yandex.ru'
+			[ELocale.ru]: 'https://yandex.ru',
 		},
 	},
 } as const;
