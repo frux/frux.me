@@ -1,12 +1,26 @@
 import { ELocale } from 'types';
 
 export const i18n = {
-	pageIndex: {
+	pageCV: {
 		meta: {
 			title: {
 				[ELocale.en]: 'Vladimir Kudinov | Frontend-engineer',
-				[ELocale.ru]: 'Владимир Кудинов | Фронтэнд-разработчик',
+				[ELocale.ru]: 'Владимир Кудинов | Фронтенд-разработчик',
 			},
+			description: {
+				[ELocale.en]: 'Vladimir Kudinov is a frontend developer from Saint-Petersburg, Russia',
+				[ELocale.ru]: 'Владимир Кудинов – фронтенд-разработчик из Санкт-Петербурга',
+			},
+			keywords: [
+				'Vladimir Kudinov',
+				'frontend',
+				'developer',
+				'cv',
+				'Владимир Кудинов',
+				'фронтенд',
+				'разработчик',
+				'резюме',
+			],
 		},
 	},
 	jobExperience: {

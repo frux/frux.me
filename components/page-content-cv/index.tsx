@@ -16,16 +16,16 @@ export default function PageContentCV(props: IProps) {
 	const { locale } = props;
 
 	return (
-		<>
-			<contextLocale.Provider value={locale}>
-				<Header />
-				<Profile />
-				<Competencies />
-				<Head>
-					<title>{i18nText(i18n.pageIndex.meta.title, locale)}</title>
-				</Head>
-				<JobExperience />
-			</contextLocale.Provider>
-		</>
+		<contextLocale.Provider value={locale}>
+			<Head>
+				<title>{i18nText(i18n.pageCV.meta.title, locale)}</title>
+				<meta name="description" content={i18nText(i18n.pageCV.meta.description, locale)} />
+				<meta name="keywords" content={i18n.pageCV.meta.keywords.join(' ')} />
+			</Head>
+			<Header />
+			<Profile />
+			<Competencies />
+			<JobExperience />
+		</contextLocale.Provider>
 	);
 }
