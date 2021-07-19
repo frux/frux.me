@@ -9,7 +9,7 @@ interface IProps {
 }
 
 export function Section(props: IProps) {
-	const { children, className, title } = props;
+	const { children, className = '', title } = props;
 
 	return (
 		<section className={`${styles.section} ${className}`}>

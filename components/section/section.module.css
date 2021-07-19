@@ -1,5 +1,6 @@
 .section {
 	clear: both;
+	padding: 0 0.75rem;
 }
 
 .section + .section {

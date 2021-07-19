@@ -1,0 +1,16 @@
+.nativeScroll {
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	white-space: nowrap;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+}
+
+.nativeScroll::-webkit-scrollbar {
+	width: 0;
+}
+
+.content {
+	display: inline-block;
+}
