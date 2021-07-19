@@ -12,6 +12,7 @@ out: clean
 	rm -rf $(TMP)
 	rm -rf $(OUT)/404.html
 	node ./scripts/delete-scripts `realpath $(OUT)`
+	node ./scripts/generate-sitemap
 clean:
 	rm -rf $(OUT)
 deploy:
