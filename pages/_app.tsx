@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 			'default-src': [NONE],
 			'script-src': [SELF, 'https://mc.yandex.ru', '\'sha256-AzF/TbZdm7fbX/Fsw9otKG39z1WBYub2Vz+HElT2Yfc=\''],
 			'style-src': [isDev ? UNSAFE_INLINE : SELF, 'https://fonts.googleapis.com'],
-			'img-src': ['https://mc.yandex.ru'],
+			'img-src': [SELF, 'https://mc.yandex.ru'],
 			'font-src': ['https://fonts.gstatic.com'],
 			'connect-src': [isDev ? SELF : '', 'https://mc.yandex.ru'],
 			'child-src': [BLOB, 'https://mc.yandex.ru'],
@@ -29,6 +29,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 					httpEquiv="Content-Security-Policy"
 					content={csp}
 					/>
+				<link rel="manifest" href="/site.webmanifest"></link>
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 			</Head>
 			<Component {...pageProps} />
 			<Metrika />

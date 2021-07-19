@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { i18nText } from '$components/i18n-text';
-import { Competencies } from '$components/competencies';
+import { Skills } from '$components/skills';
 import { JobExperience } from '$components/job-experience';
 import { i18n } from '$i18n';
 import { Profile } from '$components/profile';
@@ -24,7 +24,7 @@ export default function PageContentCV(props: IProps) {
 			</Head>
 			<Header />
 			<Profile />
-			<Competencies />
+			<Skills />
 			<JobExperience />
 		</contextLocale.Provider>
 	);

@@ -1,4 +1,4 @@
-export const competencies = [
+export const skills = [
 	'JavaScript',
 	'TypeScript',
 	'NodeJS',
