@@ -31,7 +31,6 @@ function replaceLocale(pathname: string, from: ELocale, to: ELocale) {
 	const toPrefix = config.locales.basePath[to];
 
 	if (pathname.startsWith(fromPrefix)) {
-		console.log(pathname, pathname.replace(fromPrefix, toPrefix));
 		return pathname.replace(fromPrefix, toPrefix);
 	}
 

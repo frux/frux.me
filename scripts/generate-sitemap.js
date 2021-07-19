@@ -4,10 +4,7 @@ const sitemap = require('nextjs-sitemap-generator');
 const ROOT = path.join(__dirname, '../');
 
 sitemap({
-	alternateUrls: {
-		en: 'https://frux.me/en',
-		ru: 'https://frux.me',
-	},
+	alternateUrls: {},
 	baseUrl: 'https://frux.me',
 	ignoredPaths: ['styles'],
 	extraPaths: [],
@@ -16,5 +13,5 @@ sitemap({
 	sitemapFilename: 'sitemap.xml',
 	nextConfigPath: path.join(ROOT, 'next.config.js'),
 	ignoredExtensions: ['png', 'jpg'],
-	ignoreIndexFiles: true,
+	ignoreIndexFiles: false,
 });
