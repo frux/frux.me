@@ -33,4 +33,10 @@ export const i18n = {
 			[ELocale.ru]: 'настоящее время',
 		},
 	},
-} as const;
+	profile: {
+		education: {
+			[ELocale.en]: 'Education',
+			[ELocale.ru]: 'Образование',
+		},
+	},
+};
