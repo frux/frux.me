@@ -1,10 +1,19 @@
-import { Link } from '$components/link';
+import { Button } from '$components/button';
+import IconMail from '$components/icons/mail.svg';
 import { profile } from '$data/profile';
 
-export function Contacts() {
+interface IProps {
+	className?: string;
+}
+
+export function Contacts(props: IProps) {
+	const { className } = props;
+
 	return (
-		<address>
-			<Link href={`mailto:${profile.contacts.email}`}>{profile.contacts.email}</Link>
+		<address className={className}>
+			<Button href={`mailto:${profile.contacts.email}`}>
+				<IconMail />
+			</Button>
 		</address>
 	);
 }

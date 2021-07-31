@@ -18,6 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 			'connect-src': [isDev ? SELF : '', 'https://mc.yandex.ru'],
 			'child-src': [BLOB, 'https://mc.yandex.ru'],
 			'frame-src': [BLOB, 'https://mc.yandex.ru'],
+			'manifest-src': [SELF],
 		},
 	});
 

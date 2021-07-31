@@ -1,4 +1,4 @@
-export const skills = [
+export const hashtags = [
 	'JavaScript',
 	'TypeScript',
 	'NodeJS',

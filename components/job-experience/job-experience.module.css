@@ -29,6 +29,7 @@
 	margin-top: 0.25rem;
 	word-break: break-all;
 	font-weight: bold;
+	color: var(--color-accent);
 }
 
 .positionName {

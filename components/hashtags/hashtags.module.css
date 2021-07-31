@@ -1,0 +1,21 @@
+.hashtags {
+	padding: 0;
+}
+
+
+.hashtagsList {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.hashtag::before {
+	content: '#';
+}
+
+.hashtag + .hashtag {
+	margin-left: 0.4rem;
+}

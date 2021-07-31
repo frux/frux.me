@@ -1,18 +1,39 @@
-.summary {
+.profile {
 	margin: .75rem 0;
 	padding: 0;
 	list-style: none;
 }
 
-.summaryItem + .summaryItem {
+.topLine {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.name {
+	margin-right: 1rem;
+}
+
+.contacts {
+	padding: .7rem 0;
+}
+
+.profileItem + .profileItem {
 	margin-top: .5rem;
 }
 
-.summaryKey {
+.profileKey {
 	margin-right: .25rem;
 	font-weight: bold;
+	color: var(--color-accent);
 }
 
-.summaryValue {
+.profileValue {
 	margin: 0 0 0 0.25rem;
+}
+
+.itemIcon {
+	margin-right: .25rem;
+	color: var(--color-green-30);
 }
