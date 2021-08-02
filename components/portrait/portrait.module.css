@@ -1,0 +1,18 @@
+.portrait {
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 100%;
+	background: var(--color-green-40);
+	box-shadow: 0 -.4rem 1rem var(--color-green-30) inset;
+}
+
+.portrait:hover .image {
+	transform: translate3d(0, .25rem, 0);
+}
+
+.image {
+	width: 100%;
+	transform: translate3d(0, 0, 0);
+	transition: transform .3s ease;
+	will-change: transform;
+}

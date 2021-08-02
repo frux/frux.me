@@ -11,36 +11,40 @@ import { profile } from '$data/profile';
 import { i18n } from '$i18n';
 
 import styles from './profile.module.css';
+import { Portrait } from '$components/portrait';
 
 export function Profile() {
 	const locale = useContext(contextLocale);
 
 	return (
-		<Section>
-			<div className={styles.topLine}>
-				<Title className={styles.name} level={1}>
-					<I18nText text={profile.firstName} />
-					{' '}
-					<I18nText text={profile.lastName} />
-				</Title>
-				<Contacts className={styles.contacts} />
+		<Section className={styles.profile}>
+			<div className={styles.info}>
+				<div className={styles.topLine}>
+					<Title className={styles.name} level={1}>
+						<I18nText text={profile.firstName} />
+						{' '}
+						<I18nText text={profile.lastName} />
+					</Title>
+					<Contacts className={styles.contacts} />
+				</div>
+				<Hashtags />
+				<ul className={styles.summary}>
+					<li className={styles.summaryItem}>
+						<IconLocation className={styles.itemIcon} />
+						<I18nText text={profile.summary.location} />
+					</li>
+					<li className={styles.summaryItem}>
+						<span className={styles.summaryKey}>
+							<I18nText text={i18n.profile.education} />
+						</span>
+						<Link href={i18nText(profile.summary.university.url, locale)}>
+							<I18nText text={profile.summary.university.name} />
+						</Link>
+						&nbsp;({profile.summary.university.year})
+					</li>
+				</ul>
 			</div>
-			<Hashtags />
-			<ul className={styles.profile}>
-				<li className={styles.profileItem}>
-					<IconLocation className={styles.itemIcon} />
-					<I18nText text={profile.summary.location} />
-				</li>
-				<li className={styles.profileItem}>
-					<span className={styles.profileKey}>
-						<I18nText text={i18n.profile.education} />
-					</span>
-					<Link href={i18nText(profile.summary.university.url, locale)}>
-						<I18nText text={profile.summary.university.name} />
-					</Link>
-					&nbsp;({profile.summary.university.year})
-				</li>
-			</ul>
+			<Portrait className={styles.portrait} />
 		</Section>
 	);
 }
