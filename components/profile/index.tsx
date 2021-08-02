@@ -27,7 +27,7 @@ export function Profile() {
 					</Title>
 					<Contacts className={styles.contacts} />
 				</div>
-				<Hashtags />
+				<Hashtags className={styles.hashtags} />
 				<ul className={styles.summary}>
 					<li className={styles.summaryItem}>
 						<IconLocation className={styles.itemIcon} />

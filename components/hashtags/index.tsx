@@ -4,9 +4,15 @@ import { hashtags } from '$data/hashtags';
 
 import styles from './hashtags.module.css';
 
-export function Hashtags() {
+interface IProps {
+	className?: string;
+}
+
+export function Hashtags(props: IProps) {
+	const { className = '' } = props;
+
 	return (
-		<Section className={styles.hashtags}>
+		<Section className={`${styles.hashtags} ${className}`}>
 			<NativeScroll contentClassName={styles.scroll}>
 				<ul className={styles.hashtagsList}>
 					{hashtags.map(hashtag => (

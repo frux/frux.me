@@ -5,6 +5,10 @@
 	flex-wrap: wrap-reverse;
 }
 
+.info {
+	max-width: 100%;
+}
+
 .topLine {
 	display: flex;
 	align-items: center;
@@ -22,7 +26,12 @@
 
 .portrait {
 	width: 10rem;
+	margin: 0 auto;
 	flex-shrink: 0;
+}
+
+.hashtags {
+	margin-left: -1rem;
 }
 
 .summary {
