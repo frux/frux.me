@@ -1,0 +1,1 @@
+- [N причин, почему ты не любишь кодревью](./n-reasons-why-you-dont-like-codereview)

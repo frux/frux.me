@@ -1,0 +1,23 @@
+{
+  "name": "frux.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frux/frux.me.git"
+  },
+  "keywords": [],
+  "author": "frux <mail@frux.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frux/frux.me/issues"
+  },
+  "homepage": "https://github.com/frux/frux.me#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
