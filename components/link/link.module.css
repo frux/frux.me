@@ -1,8 +1,0 @@
-.link, .link:visited {
-	color: var(--color-link);
-	text-decoration: none;
-}
-
-.link:hover {
-	color: var(--color-link-hover);
-}
